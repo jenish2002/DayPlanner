@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/puRingtone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme.NoActionBar"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/ringtone_tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ellipsize="middle"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Ringtone"
+        android:textColor="@color/Black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/ringtone_sp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="18dp"
+        android:background="#E3E3E3" />
+
+    <RelativeLayout
+        android:id="@+id/ringtone_alarm_clock"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/pressed"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:onClick="onRingtoneAlarmClock">
+
+        <ImageView
+            android:id="@+id/r_iv1"
+            android:layout_width="25dp"
+            android:layout_height="55dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/keyboard_arrow_right_blue" />
+
+        <TextView
+            android:id="@+id/tvAlarmClock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/r_iv1"
+            android:ellipsize="middle"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:text="Alarm Clock"
+            android:textColor="@color/LightBlue"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ringtone_sp2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3E3E3" />
+
+    <RelativeLayout
+        android:id="@+id/ringtone_beep"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/pressed"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:onClick="onRingtoneBeep">
+
+        <ImageView
+            android:id="@+id/r_iv2"
+            android:layout_width="25dp"
+            android:layout_height="55dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/keyboard_arrow_right_blue" />
+
+        <TextView
+            android:id="@+id/tvBeep"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/r_iv2"
+            android:ellipsize="middle"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:text="Beep"
+            android:textColor="@color/Black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ringtone_sp3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3E3E3" />
+
+    <RelativeLayout
+        android:id="@+id/ringtone_childhood"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/pressed"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:onClick="onRingtoneChildhood">
+
+        <ImageView
+            android:id="@+id/r_iv3"
+            android:layout_width="25dp"
+            android:layout_height="55dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/keyboard_arrow_right_blue" />
+
+        <TextView
+            android:id="@+id/tvChildhood"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/r_iv3"
+            android:ellipsize="middle"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:text="Childhood"
+            android:textColor="@color/Black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ringtone_sp4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3E3E3" />
+
+    <RelativeLayout
+        android:id="@+id/ringtone_mix"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/pressed"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:onClick="onRingtoneMix">
+
+        <ImageView
+            android:id="@+id/r_iv4"
+            android:layout_width="25dp"
+            android:layout_height="55dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/keyboard_arrow_right_blue" />
+
+        <TextView
+            android:id="@+id/tvMix"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/r_iv4"
+            android:ellipsize="middle"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:text="Mix"
+            android:textColor="@color/Black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ringtone_sp5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3E3E3" />
+
+    <RelativeLayout
+        android:id="@+id/ringtone_morning"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/pressed"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:onClick="onRingtoneMorning">
+
+        <ImageView
+            android:id="@+id/r_iv5"
+            android:layout_width="25dp"
+            android:layout_height="55dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/keyboard_arrow_right_blue" />
+
+        <TextView
+            android:id="@+id/tvMorning"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/r_iv5"
+            android:ellipsize="middle"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:text="Morning"
+            android:textColor="@color/Black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ringtone_sp6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3E3E3" />
+
+    <RelativeLayout
+        android:id="@+id/ringtone_sunrise"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/pressed"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:onClick="onRingtoneSunrise">
+
+        <ImageView
+            android:id="@+id/r_iv6"
+            android:layout_width="25dp"
+            android:layout_height="55dp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/keyboard_arrow_right_blue" />
+
+        <TextView
+            android:id="@+id/tvSunrise"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@id/r_iv6"
+            android:ellipsize="middle"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical"
+            android:text="Sunrise"
+            android:textColor="@color/Black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ringtone_sp7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E3E3E3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvrCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:background="@drawable/pressed"
+            android:clickable="true"
+            android:ellipsize="middle"
+            android:focusable="true"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:onClick="onClickCancel"
+            android:padding="15dp"
+            android:text="Cancel"
+            android:textColor="@color/Black"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/ringtone_sp8"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E3E3E3" />
+
+        <TextView
+            android:id="@+id/tvrOK"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:background="@drawable/pressed"
+            android:clickable="true"
+            android:ellipsize="middle"
+            android:focusable="true"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:onClick="onSelectRing"
+            android:padding="15dp"
+            android:text="OK"
+            android:textColor="@color/LightBlue"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Day Planner1</string>
+    <string name="title_activity_fullscreen_for_alarm">FullscreenActivityForAlarm</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string-array name="spinner">
+        <item>No Repeat</item>
+        <item>One</item>
+        <item>Twice</item>
+        <item>Thrice</item>
+    </string-array>
+</resources>

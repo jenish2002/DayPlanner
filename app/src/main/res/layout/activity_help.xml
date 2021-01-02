@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Help">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Help"
+                android:textSize="45sp"/>
+
+            <TextView
+                android:paddingTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Welcome to Day Planner App \n\nRemind me your daily tasks and feel free to remind at your self \n\nI'm hear to explain you how to start!!!\n\nFirst of all click the Plus Sign Button on the Home page as shown below\n" />
+
+            <ImageView
+                android:id="@+id/plusButtonImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plus"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:maxHeight="100dp"
+                android:maxWidth="100dp"
+                android:layout_gravity="center"/>
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Now fill up the required details in the page\nEnter Task Name\nSelect Date\nSelect Time\nSelect Routine Button if want to add the task to routine table\nSelect Repetition from List-view\nEnter snooze time\n\nAftet filling up the details click on (Correct) Button"/>
+
+                <ImageView
+                    android:id="@+id/correctButtonImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/correct"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="100dp"
+                    android:maxWidth="100dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Click three dots(as shown) on Top Right of Home page to see more options"/>
+
+                <ImageView
+                    android:id="@+id/threeDotsButtonImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/threedots"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="100dp"
+                    android:maxWidth="100dp"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="How to Add/Remove/See Routine Task?"/>
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Select Routine Table from List-view to see your Routine time table\n\nYou can add and remove your daily task from here"/>
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="How to Delete/Complete Task?"/>
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="On Home page you can see the list of the current Day's Tasks\nNow select the checkbox next to the task.A dialog box will be popup for confirmation of the task.Click to Yes to complete the Task."/>
+
+                <TextView
+                    android:paddingTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="To choose preferable setting goto Setting menu from Home page.From here you can change settings as per your preference!!!\n\nHave A Good Day!!!"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+</LinearLayout>

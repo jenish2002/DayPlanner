@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlSetting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Setting">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/sp1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#E3E3E3" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:scrollbarStyle="outsideOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp">
+
+            <RelativeLayout
+                android:id="@+id/Theme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pressed"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="changeTheme"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/tvThemeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/iv1"
+                    android:ellipsize="middle"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:text="Theme Color"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvThemeDes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvThemeTitle"
+                    android:layout_alignStart="@id/tvThemeTitle"
+                    android:layout_alignEnd="@id/tvThemeTitle"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="middle"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:text="Select background color for app"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvThemeDes"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    app:srcCompat="@drawable/keyboard_arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sp2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_below="@id/Theme"
+                android:background="#E3E3E3" />
+
+            <RelativeLayout
+                android:id="@+id/Ringtone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/sp2"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/pressed"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onRingtone"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/tvRingtoneTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:ellipsize="middle"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:text="Ringtone"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvRingtoneDes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/iv3"
+                    android:layout_toEndOf="@+id/tvRingtoneTitle"
+                    android:ellipsize="middle"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical|end"
+                    android:text="Alarm Clock"
+                    android:textColor="#636363"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    app:srcCompat="@drawable/keyboard_arrow_right" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sp3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_below="@id/Ringtone"
+                android:background="#E3E3E3" />
+
+            <RelativeLayout
+                android:id="@+id/Notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sp3"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/pressed"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onNotification"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/tvNotificationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/sw1"
+                    android:ellipsize="middle"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:text="Notification"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvNotificationDes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvNotificationTitle"
+                    android:layout_alignStart="@+id/tvNotificationTitle"
+                    android:layout_alignEnd="@+id/tvNotificationTitle"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="middle"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:text="Show next task in notification"
+                    android:textSize="14sp" />
+
+                <Switch
+                    android:id="@+id/sw1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvNotificationDes"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    app:srcCompat="@drawable/keyboard_arrow_right" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sp4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_below="@id/Notification"
+                android:background="#E3E3E3" />
+
+            <RelativeLayout
+                android:id="@+id/Vibration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sp4"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/pressed"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="onVibration"
+                android:gravity="center"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/tvVibrationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/sw2"
+                    android:ellipsize="middle"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:text="Vibration"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvVibrationDes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvVibrationTitle"
+                    android:layout_alignStart="@+id/tvVibrationTitle"
+                    android:layout_alignEnd="@+id/tvVibrationTitle"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="middle"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:text="Vibrate when remainder rings"
+                    android:textSize="14sp" />
+
+                <Switch
+                    android:id="@+id/sw2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvVibrationDes"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:checked="true"
+                    app:srcCompat="@drawable/keyboard_arrow_right" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sp6"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="1dp"
+                android:layout_below="@id/Vibration"
+                android:background="#E3E3E3" />
+
+            <RelativeLayout
+                android:id="@+id/Shutdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sp6"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/pressed"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="onShutdown"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/tvShutdownTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@+id/sw3"
+                    android:ellipsize="middle"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:text="Complete on power button"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvShutdownDes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvShutdownTitle"
+                    android:layout_alignStart="@+id/tvShutdownTitle"
+                    android:layout_alignEnd="@+id/tvShutdownTitle"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="middle"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_vertical"
+                    android:text="Reminder go off after press power button"
+                    android:textSize="14sp" />
+
+                <Switch
+                    android:id="@+id/sw3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tvShutdownDes"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    app:srcCompat="@drawable/keyboard_arrow_right" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
